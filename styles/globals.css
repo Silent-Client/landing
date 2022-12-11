@@ -1,0 +1,15 @@
+@font-face {
+	font-family: Onest Bold;
+	src: url(/assets/fonts/OnestBold1602-hint.ttf);
+}
+@font-face {
+	font-family: Onest Regular;
+	src: url(/assets/fonts/OnestRegular1602-hint.ttf);
+}
+
+a:focus {
+	box-shadow: none !important;
+}
+button:focus {
+	box-shadow: none !important;
+}
