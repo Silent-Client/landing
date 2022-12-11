@@ -8,6 +8,7 @@ export default extendTheme({
 	styles: {
 		global: {
 			body: {
+				color: "white",
 				backgroundColor: "black",
 			},
 		},
