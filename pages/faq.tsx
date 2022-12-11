@@ -48,7 +48,9 @@ function Faq() {
 						<AccordionButton h="full" padding={0}>
 							<Center h="full" w="full">
 								<Stack w="full" direction="row" justifyContent="space-between">
-									<Heading size="sm">What is Silent Client?</Heading>
+									<Heading textAlign="left" size="sm">
+										What is Silent Client?
+									</Heading>
 									<AccordionIcon />
 								</Stack>
 							</Center>
@@ -85,7 +87,7 @@ function Faq() {
 						<AccordionButton h="full" padding={0}>
 							<Center h="full" w="full">
 								<Stack w="full" direction="row" justifyContent="space-between">
-									<Heading size="sm">
+									<Heading textAlign="left" size="sm">
 										Can I use Silent Client on any server?
 									</Heading>
 									<AccordionIcon />
@@ -122,7 +124,9 @@ function Faq() {
 						<AccordionButton h="full" padding={0}>
 							<Center h="full" w="full">
 								<Stack w="full" direction="row" justifyContent="space-between">
-									<Heading size="sm">Is Silent Client really free?</Heading>
+									<Heading textAlign="left" size="sm">
+										Is Silent Client really free?
+									</Heading>
 									<AccordionIcon />
 								</Stack>
 							</Center>
