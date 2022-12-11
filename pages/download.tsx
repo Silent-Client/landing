@@ -81,8 +81,8 @@ function Download() {
 									<br />
 									2) Unzip the archive to the folder with Minecraft versions
 									<br />
-									3) Open your minecraft launcher and select "SilentClient"
-									version!
+									3) Open your minecraft launcher and select
+									&quot;SilentClient&quot; version!
 								</Text>
 							))}
 					</ModalBody>
