@@ -26,8 +26,8 @@ function Faq() {
 				</Center>
 				<Center>
 					<Text fontSize="xl">
-						Got questions? We've got <b>answers</b>! If you don't see your
-						question below, you can reach us on any of the platforms{" "}
+						Got questions? We&quot;ve got <b>answers</b>! If you don&quot;t see
+						your question below, you can reach us on any of the platforms{" "}
 						<b>listed below</b>.
 					</Text>
 				</Center>

@@ -19,7 +19,7 @@ export default function Home() {
 			<Center w="full">
 				<Stack direction="column" spacing="20px">
 					<Center>
-						<Image w="180px" src="/assets/images/logo.svg" />
+						<Image alt="logo" w="180px" src="/assets/images/logo.svg" />
 					</Center>
 					<Center mt={"30px!important"}>
 						<Heading size="2xl">SILENT CLIENT</Heading>
