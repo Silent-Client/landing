@@ -25,7 +25,7 @@ function Faq() {
 					<Heading size="2xl">FAQ</Heading>
 				</Center>
 				<Center>
-					<Text fontSize="xl">
+					<Text fontSize="xl" textAlign="center">
 						Got questions? We&quot;ve got <b>answers</b>! If you don&quot;t see
 						your question below, you can reach us on any of the platforms{" "}
 						<b>listed below</b>.
