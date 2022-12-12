@@ -107,7 +107,14 @@ function Header() {
 							/>
 							<MenuList bgColor="black">
 								{MenuItems.map(link => (
-									<MenuItem bgColor={"black"} as={NextLink} href={link.to}>
+									<MenuItem
+										bgColor={"black"}
+										_hover={{
+											bgColor: "#131313",
+										}}
+										as={NextLink}
+										href={link.to}
+									>
 										{link.name}
 									</MenuItem>
 								))}

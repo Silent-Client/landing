@@ -124,8 +124,8 @@ function Faq() {
 			</Stack>
 			<Stack direction="column" spacing={5} mt={20}>
 				<Accordion allowToggle={true}>
-					{questions.map(q => (
-						<Item question={q.question} answer={q.answer} />
+					{questions.map((q, key) => (
+						<Item question={q.question} answer={q.answer} key={key} />
 					))}
 				</Accordion>
 			</Stack>
