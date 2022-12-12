@@ -9,8 +9,24 @@ function Footer() {
 		<Center w="full" padding="45px 0px" as="footer">
 			<Stack
 				w={["auto", "full"]}
-				paddingRight={[0, 10]}
-				paddingLeft={[0, 10]}
+				paddingInlineStart={[
+					"15px",
+					"15px",
+					"15px",
+					"2rem",
+					"2rem",
+					"3rem",
+					"4rem",
+				]}
+				paddingInlineEnd={[
+					"15px",
+					"15px",
+					"15px",
+					"2rem",
+					"2rem",
+					"3rem",
+					"4rem",
+				]}
 				direction={["column", "row"]}
 				justifyContent="space-between"
 			>
