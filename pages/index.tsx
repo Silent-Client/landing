@@ -41,7 +41,7 @@ export default function Home() {
 								<Button w="full">Download</Button>
 							</NextLink>
 							<NextLink
-								href="https://store.silentclient.ml"
+								href="https://store.silentclient.net"
 								style={{
 									width: "100%",
 								}}
