@@ -31,7 +31,7 @@ export const MenuItems: {
 	},
 	{
 		name: "Store",
-		to: "https://store.silentclient.ml",
+		to: "https://store.silentclient.net",
 		isExternal: true,
 	},
 ];
