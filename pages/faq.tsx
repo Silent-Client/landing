@@ -48,9 +48,9 @@ export const questions: {
 				<Link
 					textDecoration="underline"
 					color="white"
-					href={"https://store.silentclient.ml"}
+					href={"https://store.silentclient.net"}
 				>
-					store.silentclient.ml
+					store.silentclient.net
 				</Link>
 				.
 			</p>
