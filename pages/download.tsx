@@ -37,27 +37,11 @@ function Download() {
 			<Center mt={10}>
 				<Stack direction={["column", "row"]} spacing={3}>
 					<a href="https://api.silentclient.ml/releases/launcher.exe">
-						<Button
-							onClick={() => {
-								setSelectedVersion("launcher");
-								onOpen();
-							}}
-							w={["full", "auto"]}
-						>
-							Launcher for Windows
-						</Button>
+						<Button w={["full", "auto"]}>Download for Windows</Button>
 					</a>
-					<a href="https://api.silentclient.ml/releases/SilentClient.zip">
-						<Button
-							onClick={() => {
-								setSelectedVersion("folder");
-								onOpen();
-							}}
-							w={["full", "auto"]}
-						>
-							Version folder
-						</Button>
-					</a>
+					<Button isDisabled={true} w={["full", "auto"]}>
+						Download for MacOS
+					</Button>
 				</Stack>
 			</Center>
 			<Modal isOpen={isOpen} onClose={onClose}>
