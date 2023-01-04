@@ -16,7 +16,7 @@ export default function Home() {
 	const router = useRouter();
 
 	if (router.query.u) {
-		window.location.href = `https://store.silentclient.net/#/account/${router.query.u}`;
+		window.location.href = `https://store.silentclient.net/account/${router.query.u}`;
 	}
 
 	return (
