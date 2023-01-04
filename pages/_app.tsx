@@ -35,11 +35,6 @@ export default function App({ Component, pageProps }: AppProps) {
 					href="/assets/favicon-16x16.png"
 				/>
 				<link rel="manifest" href="/assets/site.webmanifest" />
-				<link
-					rel="mask-icon"
-					href="/assets/safari-pinned-tab.svg"
-					color="#000000"
-				/>
 				<meta name="msapplication-TileColor" content="#2b5797" />
 				<meta name="theme-color" content="#000000" />
 			</Head>
