@@ -9,16 +9,9 @@ import {
 } from "@chakra-ui/react";
 import Head from "next/head";
 import NextLink from "next/link";
-import { useRouter } from "next/router";
 import React from "react";
 
 export default function Home() {
-	const router = useRouter();
-
-	if (router.query.u) {
-		window.location.href = `https://store.silentclient.net/account/${router.query.u}`;
-	}
-
 	return (
 		<Box w="full">
 			<Head>
