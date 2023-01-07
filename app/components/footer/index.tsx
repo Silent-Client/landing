@@ -63,7 +63,7 @@ function Footer() {
 
             <Link
               transition="opacity 0.2s ease-in-out"
-              href="https://discord.gg/63B8vWeQ"
+              href="https://discord.gg/7mNS4pNG"
               color="#c9c9c9"
               isExternal
               _hover={{
