@@ -6,7 +6,7 @@ export default function User({ account }: any) {
 	return (
 		<Box>
 			<Head>
-				<title>{account.original_username} | Silent Client</title>
+				<title>{`${account.original_username} | Silent Client`}</title>
 				<meta
 					http-equiv="refresh"
 					content={`0;URL=https://store.silentclient.net/account/${account.original_username}`}
