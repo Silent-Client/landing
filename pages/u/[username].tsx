@@ -1,15 +1,21 @@
 import axios from "axios";
 import Head from "next/head";
+import { Box, Center, Heading } from "@chakra-ui/react";
 
 export default function User({ account }: any) {
 	return (
-		<Head>
-			<title>{account.original_username} | Silent Client</title>
-			<meta
-				http-equiv="refresh"
-				content={`0;URL=https://store.silentclient.net/account/${account.original_username}`}
-			/>
-		</Head>
+		<Box>
+			<Head>
+				<title>{account.original_username} | Silent Client</title>
+				<meta
+					http-equiv="refresh"
+					content={`0;URL=https://store.silentclient.net/account/${account.original_username}`}
+				/>
+			</Head>
+			<Center>
+				<Heading>Redirecting...</Heading>
+			</Center>
+		</Box>
 	);
 }
 

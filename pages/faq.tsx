@@ -30,6 +30,15 @@ export const questions: {
 		),
 	},
 	{
+		question: "Will Silent Client boost my frames?",
+		answer: (
+			<p>
+				Using several FPS boosting techniques, Silent Client boosts your FPS by
+				a huge amount. In most cases users will see their FPS <b>double</b>.
+			</p>
+		),
+	},
+	{
 		question: "Can I use Silent Client on any server?",
 		answer: (
 			<p>
@@ -38,7 +47,7 @@ export const questions: {
 		),
 	},
 	{
-		question: "Is Silent Client really free??",
+		question: "Is Silent Client really free?",
 		answer: (
 			<p>
 				Silent Client is completely free to use, and you miss out on zero
@@ -51,6 +60,28 @@ export const questions: {
 					href={"https://store.silentclient.net"}
 				>
 					store.silentclient.net
+				</Link>
+				.
+			</p>
+		),
+	},
+	{
+		question: "What is Silent+?",
+		answer: (
+			<p>
+				Silent+ is our new subscription service that offers users exclusive
+				perks and features such as an exclusive icon, store savings, and more.
+				These perks will be automatically applied to your account when you
+				purchase a subscription and will be removed when the subscription ends.
+				<br />
+				To check out a full list of exclusive features and find out more about
+				individual perks, visit{" "}
+				<Link
+					textDecoration="underline"
+					color="white"
+					href={"https://store.silentclient.net/plus"}
+				>
+					store.silentclient.net/plus
 				</Link>
 				.
 			</p>
