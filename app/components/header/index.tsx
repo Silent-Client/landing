@@ -15,6 +15,7 @@ import {
 import NextLink from "next/link";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { useRouter } from "next/router";
+import axios from "axios";
 
 export const MenuItems: {
 	name: string;
@@ -38,6 +39,24 @@ export const MenuItems: {
 
 function Header() {
 	const Router = useRouter();
+	const [online, setOnline] = React.useState<number>(0);
+
+	React.useEffect(() => {
+		const getData = async () => {
+			try {
+				const { data: res } = await axios.get(
+					"https://api.silentclient.net/stats"
+				);
+
+				setOnline(res.stats.players_online);
+			} catch (e) {
+				console.error(e);
+			}
+		};
+
+		getData();
+	}, []);
+
 	return (
 		<Box bgColor="black" position="relative" w="full" zIndex={2} as="header">
 			<Container
@@ -93,9 +112,17 @@ function Header() {
 									as={NextLink}
 									href={link.to}
 								>
-									{link.name}
+									<Center h="full">{link.name}</Center>
 								</Link>
 							))}
+							<Box
+								bgColor="rgb(19, 19, 19)"
+								borderRadius="5px"
+								border="solid 0.8px #3a3a3a"
+								p="5px 10px"
+							>
+								Players Online: {online}
+							</Box>
 						</Stack>
 					</Center>
 					<Center w="auto" h="full" display={["flex", "none"]}>

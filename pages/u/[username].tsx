@@ -1,8 +1,24 @@
 import axios from "axios";
 import Head from "next/head";
 import { Box, Center, Heading } from "@chakra-ui/react";
+import { GetStaticPaths, GetStaticProps } from "next";
 
-export default function User({ account }: any) {
+export default function User({
+	account,
+}: {
+	account: {
+		id: number;
+		username: string;
+		email: string;
+		original_username: string;
+		is_admin: number;
+		is_online: number;
+		last_online: string;
+		created_at: string;
+		is_plus: number;
+		plus_expiration: string;
+	};
+}) {
 	return (
 		<Box>
 			<Head>
@@ -19,7 +35,7 @@ export default function User({ account }: any) {
 	);
 }
 
-export async function getStaticPaths() {
+export const getStaticPaths: GetStaticPaths = async () => {
 	const { data: res } = await axios.get(
 		"https://api.silentclient.net/_next/get_users"
 	);
@@ -27,9 +43,9 @@ export async function getStaticPaths() {
 		params: { username: user.original_username },
 	}));
 	return { paths, fallback: "blocking" };
-}
+};
 
-export async function getStaticProps({ params }: any) {
+export const getStaticProps: GetStaticProps = async ({ params }: any) => {
 	const { data: user } = await axios.get(
 		`https://api.silentclient.net/account/${params.username}`
 	);
@@ -43,4 +59,4 @@ export async function getStaticProps({ params }: any) {
 			account: user.account,
 		},
 	};
-}
+};
